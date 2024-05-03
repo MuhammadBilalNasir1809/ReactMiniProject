@@ -1,0 +1,125 @@
+.leaderboard {
+    width: 1000px;
+    height: 1000px;
+    margin: 70px auto;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    overflow-y: scroll;
+    background-color: #222; /* Dark background color */
+    color: #fff; /* Text color */
+}
+.light-theme {
+  background-color: #fff; /* Light background color */
+}
+
+.dark-theme {
+  background-color: #333; /* Dark background color */
+}
+.Navbar{
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: xx-large;
+    text-transform: capitalize;
+    text-decoration: underline;
+    height: 100px;
+}
+
+.headings {
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-weight: 600;
+    font-size: 17px;
+    background: black; /* Darker background color */
+    border-bottom: 2px solid #f90; /* Orange border */
+    gap: 60px;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensure navbar is above other content */
+    padding: 10px 0;
+}
+.headings .heading1{
+    margin-inline-start: 20px;
+}
+.leaderboard-body {
+    display: grid; /* Use grid layout for columns */
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Adjust column width */
+    gap: 130px; /* Add gap between columns */
+    text-align: center;
+    padding: 10px 0px;
+    background-color: #222; /* Dark background color for body */
+}
+
+.leaderboard-body:nth-child(odd) {
+    background-color: #777; /* Darker background color for odd rows */
+}
+
+.team-profile-data {
+    display: flex;
+    flex-direction: column; /* Display items in a column */
+    align-items: center; /* Center-align items horizontally */
+    padding: 5px 20px; /* Added padding for spacing */
+}
+
+img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    object-fit: cover;
+    margin-bottom: 10px; /* Add margin between images for spacing */
+}
+
+.rank-img {
+    margin-left: 40px;
+}
+
+.rank-number {
+    padding-left: 20px;
+    margin-right: -20px;
+}
+
+.games-played {
+    width: 80px;
+    text-align: center;
+    margin: 5px 20px;
+    white-space: nowrap;
+    padding-right: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.games-played span {
+    display: inline-block;
+    width: 10px; /* Adjust width for the numbers */
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: orange ; /* Darker scrollbar thumb color */
+    border-radius: 2px;
+}
+
+
+::-webkit-scrollbar-track {
+    background-color: #555; /* Darker scrollbar track color */
+}
+button{
+    align-items: flex-end;
+    margin-left: 1200px;
+    padding:10px;
+    background-color: red;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+}
+button:active {
+    background-color: aqua; /* Change background color on hover */
+  }
+  
